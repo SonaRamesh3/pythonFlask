@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <style>
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 3px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Edit Student</h2>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ student.Name }}" required>
+
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class" value="{{ student.Class }}" required>
+
+        <label for="division">Division:</label>
+        <input type="text" id="division" name="division" value="{{ student.Division }}">
+
+        <label for="guardian">Guardian:</label>
+        <input type="text" id="guardian" name="guardian" value="{{ student.Guardian }}">
+
+        <label for="mobile_no">Mobile No:</label>
+        <input type="text" id="mobile_no" name="mobile_no" value="{{ student.MobileNo }}">
+
+        <button type="submit">Save Changes</button>
+    </form>
+</body>
+
+</html>
